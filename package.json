@@ -1,0 +1,38 @@
+{
+  "name": "klas-email-automator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development npx nodemon index.js",
+    "start": "node index.js",
+    "test": "NODE_ENV=test jest --detectOpenHandles --forceExit",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1157.0",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.30.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "emailjs": "^4.0.0",
+    "express": "^4.18.1",
+    "google-auth-library": "^8.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.1",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.1",
+    "nodemailer": "^6.7.5",
+    "simple-node-cron": "^1.0.1",
+    "uuid": "^8.3.2",
+    "winston": "^3.8.1"
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "jest": "^28.1.2",
+    "mongodb-memory-server": "^8.7.2",
+    "nodemon": "^2.0.16",
+    "supertest": "^6.2.4"
+  }
+}
